@@ -14,8 +14,8 @@
 ._wJSNova_sidebarSelect{width: 180px;}
 
 /*** code area ***/
+._wJSNova_codeArea{position:absolute; left:201px; top:0px; width:400px; height:100%; background:#CACACA;}
 ._wJSNova_codeAreaTable{width:100%; height:100%;}
-._wJSNova_codeArea{position:absolute; left:201px; top:0px; width:400px; height:100%;}
 ._wJSNova_boxLeft,._wJSNova_boxRight{width:50%;}
 ._wJSNova_boxTop{height:40%;}
 ._wJSNova_boxBottom{height:60%;}

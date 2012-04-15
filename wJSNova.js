@@ -26,6 +26,14 @@
 			if(data)
 			{
 				if(option == 'resize') { data.resize(); return true }
+				else if($.fn.wJSNova.defaultSettings[option] !== undefined)
+				{
+					if(settings !== undefined){
+						data.settings[option] = settings;
+						return true;
+					}
+					else return data.settings[option];
+				}
 				else return false;
 			}
 			else return false;
@@ -213,7 +221,7 @@
 		{
 			this.boxHTML.val('');
 			this.boxCSS.val('');
-			this.boxJS.val();
+			this.boxJS.val('');
 			this.writeResult('');
 		},
 		
