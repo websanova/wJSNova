@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Websanova jQuery Plugin Development Boilerplate</title>
+
+	<script type="text/javascript" src="./inc/jquery.1.7.1.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="./wJSNova.css"/>
+	<script type="text/javascript" src="./wJSNova.js"></script>
+	
+	<style>
+		body,html{margin:0px; overflow:hidden;}		
+	</style>
+</head>
+<body>
+
+	<div id="JSNova" style="width:100%;height:400px;background:#CACACA;"></div>
+
+	<script type="text/javascript">
+		
+		var jsn = null;
+		
+		$(document).ready(function()
+		{
+			$('#JSNova').height($(window).height());
+			jsn = $("#JSNova").wJSNova();
+			jsn.wJSNova('resize');
+		});
+		
+		$(window).resize(function()
+		{
+			$('#JSNova').height($(window).height());
+			jsn.wJSNova('resize');
+		});
+		
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

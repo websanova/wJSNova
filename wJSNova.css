@@ -1,0 +1,24 @@
+/*** layout ***/
+._wJSNova_holder{position:relative; width:100%; height:100%; font-family:verdana; font-size:12px;}
+
+/*** menu ***/
+._wJSNova_menu{position:absolute; left:0px; top:0px; width:100%; height:30px; line-height:30px; background:#555555; color:#FFFFFF;}
+._wJSNova_menuPadding{padding-left:205px;}
+._wJSNova_menuButton{font-weight:bold; line-height:30px; cursor:pointer;}
+._wJSNova_menuBullet{color:#CACACA; font-size:8px; margin:0 3px;}
+
+/*** sidebar ***/
+._wJSNova_sidebar{position:absolute; left:0px; top:0px; width:200px; height:100%; background:#CACACA; border-right:solid #FFFFFF 1px;}
+._wJSNova_sidebarPadding{padding:0 10px;}
+._wJSNova_sidebarLabel{font-weight:bold; font-size: 10px; margin:10px 0 5px 0;}
+._wJSNova_sidebarSelect{width: 180px;}
+
+/*** code area ***/
+._wJSNova_codeAreaTable{width:100%; height:100%;}
+._wJSNova_codeArea{position:absolute; left:201px; top:0px; width:400px; height:100%;}
+._wJSNova_boxLeft,._wJSNova_boxRight{width:50%;}
+._wJSNova_boxTop{height:40%;}
+._wJSNova_boxBottom{height:60%;}
+._wJSNova_boxContainer{position:relative; width:100%; height:100%; overflow:hidden;}
+._wJSNova_boxEdit{position:absolute; left:0px; top:0px; width:100%; height:100%; margin-top:0px; border:none; resize:none; background:#FFFFFF;}
+._wJSNova_boxLabel{position:absolute; right:5px; top:5px; padding:0 3px; border:solid #CACACA 1px; font-size:10px; color:#CACACA;}
