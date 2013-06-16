@@ -1,49 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Websanova jQuery Plugin Development Boilerplate</title>
-
-	<script type="text/javascript" src="./inc/jquery.1.7.1.min.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="./wJSNova.css"/>
-	<script type="text/javascript" src="./wJSNova.js"></script>
-	
-	<style>
-		body,html{margin:0px; overflow:hidden;}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="jquery, plugin, wjsnova, jsnova, jsfiddle" />
+    <meta name="description" content="An experimental jQuery plugin to duplicate the jsFiddle functionality in a jQuery plugin." />
+    <meta name = "owner" content = "Websanova" />
+    <link rel="icon" type="image/vnd.microsoft.icon"  href="./assets/img/favicon.ico" />
+    <title>Websanova :: wJSNova</title>
+    
+    <script type="text/javascript" src="./assets/jquery.1.9.1.min.js"></script>
+    <link rel="Stylesheet" type="text/css" href="./assets/demo.css" />
 </head>
 <body>
+    <header>
+        <a id="header-logo" href="http://websanova.com"></a>
 
-	<div id="JSNova" style="width:100%;height:400px;"></div>
+        <div id="header-links">
+            <a href="http://websanova.com">Home</a>
+            <a href="http://websanova.com/plugins">Plugins</a>
+            <a href="http://websanova.com/extensions">Extensions</a>
+        </div>
+    </header>   
 
-	<script type="text/javascript">
-		
-		var jsn = null;
-		
-		$(document).ready(function()
-		{
-			$('#JSNova').height($(window).height());
-			jsn = $("#JSNova").wJSNova();
-			jsn.wJSNova('resize');
-		});
-		
-		$(window).resize(function()
-		{
-			$('#JSNova').height($(window).height());
-			jsn.wJSNova('resize');
-		});
-		
-	</script>
+    <link rel="stylesheet" type="text/css" href="./wJSNova.css"/>
+    <script type="text/javascript" src="./wJSNova.js"></script>
 
+    <style>
+        body,html{margin:0px; overflow:hidden;}
+    </style>
+
+    <div id="JSNova" style="width:100%;height:400px;margin:40px 0;"></div>
+
+    <script type="text/javascript">
+        
+        var jsn = null;
+        
+        $(document).ready(function()
+        {
+            $('#JSNova').height($(window).height()-80);
+            jsn = $("#JSNova").wJSNova();
+            jsn.wJSNova('resize');
+        });
+        
+        $(window).resize(function()
+        {
+            $('#JSNova').height($(window).height()-80);
+            jsn.wJSNova('resize');
+        });
+        
+    </script>
+
+    <footer>
+        <div id="footer-icons">
+            <!--a id="youtube-icon" href="http://websanova.com/youtube" target="_blank"></a-->
+            <a id="stumbleupon-icon" href="http://websanova.com/stumbleupon" target="_blank"></a>
+            <a id="linkedin-icon" href="http://websanova.com/linkedin" target="_blank"></a>
+            <a id="facebook-icon" href="http://websanova.com/facebook" target="_blank"></a>
+            <a id="googleplus-icon" href="http://websanova.com/googleplus" target="_blank"></a>
+            <a id="twitter-icon" href="http://websanova.com/twitter" target="_blank"></a>
+            <a id="github-icon" href="http://websanova.com/github" target="_blank"></a>
+            <a id="rss-icon" href="http://websanova.com/feed" target="_blank"></a>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        if(window.location.protocol === 'file:') $('#addthis-toolbox').hide();
+    </script>
+
+    <!-- AddThis Button BEGIN -->
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-504fdeb9241970a8"></script>
+    <!-- AddThis Button END -->
+
+    <!-- google analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-12380236-11']);
+        _gaq.push(['_trackPageview']);
+
+        var _gaq_rollup = _gaq || [];
+        _gaq_rollup.push(['_setAccount', 'UA-12380236-19']);
+        _gaq_rollup.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
